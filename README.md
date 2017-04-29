@@ -1,4 +1,5 @@
 # GQ002
 opq project
 123 testing 
-efrgthyjuk
+efrgthyju
+add some libraries
