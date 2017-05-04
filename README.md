@@ -134,8 +134,35 @@ xList * pxList;
 	pxItemToRemove->pvContainer = NULL;
 	( pxList->uxNumberOfItems )--;
 }
-/*-----------------------------------------------------------*/
-/* Hi Dear master!!
+Ya conocen los tipos de datos char, int, float etc
+En C se pueden crear tipos de datos segun los requerientos y/o necesidades del programa
 
-*/
-kooko
+Por ejemplo:
+typedef struct 
+{
+	unsigned char estado:4; 
+	unsigned char contador;
+	unsigned char *pBufferA;
+	unsigned int *pBufferB;
+	void (*callback)(void * pArg);
+}miTipoDeDato;
+
+Ya que esta difinido podemos declarar variables del tipo de dato creado
+
+miTipoDeDato memCtrl; //Como datos en memoria RAM
+
+void miFuncion(miTipoDeDato *accesoAcontrol) //como puntero
+{
+	char prueba;
+//cuerpo de mi funcion
+	accesoAcontrol->estado = 1; //Modificacion de variables 
+	.
+	.
+	.
+	prueba = 12;
+	.
+	.
+	accesoAControl->callback(prueba)
+}
+
+
